@@ -33,7 +33,7 @@ export class PrincipiosComponent {
     {
       title: 'Disponibilidad',
       description: 'La disponibilidad garantiza que la información y los recursos estén accesibles y utilizables cuando sean necesarios. Esto implica la implementación de medidas para prevenir interrupciones en el servicio, como copias de seguridad regulares, redundancia de sistemas y planes de recuperación ante desastres. Mantener la disponibilidad es esencial para la continuidad del negocio y la satisfacción del cliente.',
-      img: 'disponibilidad.png',
+      img: 'disponibilidad1.png',
       isOpen: false
     },
     {
