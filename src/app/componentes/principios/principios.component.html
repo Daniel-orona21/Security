@@ -1,0 +1,16 @@
+<div class="contenidoSumary">
+    <h1 class="tituloSumary">Principios de Seguridad de la Información</h1>
+
+    <div class="Dropdown" *ngFor="let item of items">
+        <div class="HeaderDropDown" (click)="toggleDropdown(item)">
+            <span>📌</span>
+            <h3>{{ item.title }}</h3>
+        </div>
+        <div class="ContentDropDown" [class.active]="item.isOpen">
+            <div class="subSumary">
+                <p class="descripcionSumary">{{ item.description }}</p>
+                <img [src]="item.img" class="content-image" />
+            </div> 
+        </div>
+    </div>
+</div>

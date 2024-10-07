@@ -1,0 +1,51 @@
+
+  <div class="cuerpo">
+  <div class="intro">
+    <h1 class="hero glitch1 layers" data-text="近]&%設計計§∞¢£“¡“£∞¢§¶•"><span>Seguridad de la información</span></h1>
+    <p class="arriba">&#8593; Scroll &#8593;</p>
+  </div>
+
+  <header>
+    <div id="wrapper">
+      <div class="titulo" title="Seguridad de la Información">Seguridad de la Información</div>
+    </div>
+    <ul>
+      <li (click)="mostrarComponente('ataques')">Ataques</li>
+      <li (click)="mostrarComponente('confidencialidad')">Confidencialidad</li>
+      <li (click)="mostrarComponente('principios')">Principios</li>
+    </ul>
+  </header>
+  
+  <div class="scroll">
+  <div class="contenido">
+    <div class="subcontenido">
+    <h1>Qué es?</h1>
+    <div class="introduccion">
+      <p><strong>Ciberseguridad</strong> se refiere a la práctica de proteger sistemas, redes, programas y datos de ataques digitales, daños o acceso no autorizado. Incluye la implementación de tecnologías, procesos y controles diseñados para proteger la infraestructura de información y garantizar la confidencialidad, integridad y disponibilidad de los datos. Con el aumento de la digitalización, la ciberseguridad se ha vuelto esencial para proteger a individuos y organizaciones de amenazas como malware, phishing, ransomware y ataques de denegación de servicio (DDoS).</p>
+    </div>
+  </div>
+<div class="secciones">
+  <h1>Secciones</h1>
+  <div class="subsecciones">
+  <div class="seccion sec1" (click)="mostrarComponente('ataques')">
+    <p>Ataques Ciberneticos</p>
+  </div>
+  <div class="seccion sec2" (click)="mostrarComponente('confidencialidad')">
+    <p>Confidencialidad de la información</p>
+  </div>
+  <div class="seccion sec3" (click)="mostrarComponente('principios')">
+    <p>Principios de seguridad de la información</p>
+  </div>
+</div>
+</div>
+
+  <div class="componentes">
+    <app-ataques *ngIf="componenteActual === 'ataques'"></app-ataques>
+    <app-confidencialidad *ngIf="componenteActual === 'confidencialidad'"></app-confidencialidad>
+    <app-principios *ngIf="componenteActual === 'principios'"></app-principios>
+  </div>
+
+<div class="daniel"><p>López Orona Alejandro Daniel | 7°A</p></div>
+  </div>
+</div>
+</div>
